@@ -3,3 +3,59 @@ row_id,order_id,order_date,ship_date,ship_mode,customer_id,customer_name,segment
 2,CA-002,2018-11-30,2018-12-02,First,C-001,Ada Lovelace,Consumer,United Kingdom,London
 3,CA-003,2018-01-01,2018-01-03,Standard,C-001,Ada Lovelace,Consumer,United Kingdom,London
 4,CA-004,2018-12-15,2018-12-20,Second,C-002,Grace Hopper,Corporate,United States,New York
+5,CA-005,2019-02-10,2019-02-12,First,C-003,Alan Turing,Corporate,United States,Chicago
+6,CA-006,2019-03-05,2019-03-08,Standard,C-004,Marie Curie,Home Office,France,Paris
+7,CA-007,2019-04-18,2019-04-22,Second,C-005,Linus Torvalds,Consumer,Germany,Berlin
+8,CA-008,2019-05-22,2019-05-25,Standard,C-006,Tim Berners-Lee,Corporate,United Kingdom,Manchester
+9,CA-009,2019-06-09,2019-06-11,First,C-007,Barbara McClintock,Consumer,Canada,Toronto
+10,CA-010,2019-07-14,2019-07-17,Standard,C-008,Isaac Newton,Home Office,Australia,Sydney
+11,CA-011,2019-08-03,2019-08-05,Second,C-009,Richard Feynman,Consumer,United States,Los Angeles
+12,CA-012,2019-09-20,2019-09-24,First,C-010,Emmy Noether,Corporate,Germany,Hamburg
+13,CA-013,2019-10-11,2019-10-14,Standard,C-011,David Hilbert,Consumer,France,Marseille
+14,CA-014,2019-11-27,2019-11-30,Second,C-012,Katherine Johnson,Home Office,United States,Atlanta
+15,CA-015,2020-01-07,2020-01-10,Standard,C-013,Stephen Hawking,Consumer,United Kingdom,Birmingham
+16,CA-016,2020-01-29,2020-02-01,First,C-014,Charles Darwin,Corporate,United States,Seattle
+17,CA-017,2020-02-18,2020-02-20,Second,C-015,Jane Goodall,Consumer,Canada,Vancouver
+18,CA-018,2020-03-12,2020-03-15,Standard,C-016,Albert Einstein,Home Office,Germany,Frankfurt
+19,CA-019,2020-04-02,2020-04-05,First,C-017,Nikola Tesla,Corporate,United States,Miami
+20,CA-020,2020-04-28,2020-05-02,Standard,C-018,Marie Curie,Consumer,France,Lyon
+21,CA-021,2020-05-30,2020-06-02,Second,C-019,John von Neumann,Corporate,United Kingdom,Edinburgh
+22,CA-022,2020-06-14,2020-06-18,First,C-020,Rosalind Franklin,Home Office,Australia,Melbourne
+23,CA-023,2020-07-08,2020-07-10,Standard,C-021,Max Planck,Consumer,United States,Dallas
+24,CA-024,2020-08-19,2020-08-23,Second,C-022,Noam Chomsky,Corporate,Canada,Montreal
+25,CA-025,2020-09-06,2020-09-09,First,C-023,Alan Turing,Consumer,Germany,Munich
+26,CA-026,2020-10-03,2020-10-06,Standard,C-024,Hedy Lamarr,Home Office,United States,Boston
+27,CA-027,2020-11-15,2020-11-18,Second,C-025,Mae Jemison,Consumer,United Kingdom,Leeds
+28,CA-028,2020-12-09,2020-12-13,First,C-026,Guglielmo Marconi,Corporate,Italy,Rome
+29,CA-029,2021-01-12,2021-01-15,Standard,C-027,Amelia Earhart,Home Office,United States,Denver
+30,CA-030,2021-02-22,2021-02-26,Second,C-028,Niels Bohr,Consumer,France,Nice
+31,CA-031,2021-03-17,2021-03-20,First,C-029,Grace Hopper,Corporate,United States,San Francisco
+32,CA-032,2021-04-05,2021-04-08,Standard,C-030,Alan Turing,Consumer,United Kingdom,Liverpool
+33,CA-033,2021-05-11,2021-05-14,Second,C-031,Mary Anning,Home Office,Australia,Perth
+34,CA-034,2021-06-30,2021-07-03,First,C-032,Sheldon Cooper,Corporate,Canada,Calgary
+35,CA-035,2021-07-22,2021-07-26,Standard,C-033,Neil deGrasse Tyson,Consumer,Germany,Cologne
+36,CA-036,2021-08-14,2021-08-18,Second,C-034,Jane Austen,Home Office,United States,Austin
+37,CA-037,2021-09-11,2021-09-15,First,C-035,Isaac Asimov,Corporate,France,Paris
+38,CA-038,2021-10-09,2021-10-13,Standard,C-036,Margaret Hamilton,Consumer,United States,Chicago
+39,CA-039,2021-11-20,2021-11-24,Second,C-037,Ludwig van Beethoven,Corporate,Germany,Berlin
+40,CA-040,2021-12-18,2021-12-22,First,C-038,Virginia Woolf,Home Office,United Kingdom,London
+41,CA-041,2022-01-08,2022-01-11,Standard,C-039,Caroline Herschel,Consumer,United States,Philadelphia
+42,CA-042,2022-01-26,2022-01-30,Second,C-040,Anders Celsius,Corporate,Sweden,Stockholm
+43,CA-043,2022-02-14,2022-02-17,First,C-041,William Shakespeare,Consumer,United Kingdom,Bristol
+44,CA-044,2022-03-09,2022-03-13,Standard,C-042,Marie Sklodowska,Home Office,Poland,Warsaw
+45,CA-045,2022-04-19,2022-04-22,Second,C-043,Friedrich Nietzsche,Corporate,Germany,Leipzig
+46,CA-046,2022-05-06,2022-05-09,First,C-044,Jane Goodall,Consumer,United States,Portland
+47,CA-047,2022-06-02,2022-06-05,Standard,C-045,Leonardo da Vinci,Home Office,Italy,Milan
+48,CA-048,2022-07-13,2022-07-16,Second,C-046,Galileo Galilei,Consumer,Spain,Madrid
+49,CA-049,2022-08-21,2022-08-24,First,C-047,Johannes Kepler,Corporate,Netherlands,Amsterdam
+50,CA-050,2022-09-18,2022-09-21,Standard,C-048,Oscar Wilde,Consumer,United Kingdom,Glasgow
+51,CA-051,2022-10-05,2022-10-08,Second,C-049,Henri Poincare,Home Office,France,Lille
+52,CA-052,2022-11-11,2022-11-15,First,C-050,Pyotr Tchaikovsky,Corporate,Russia,Moscow
+53,CA-053,2022-12-03,2022-12-06,Standard,C-051,Annie Jump Cannon,Consumer,United States,Nashville
+54,CA-054,2023-01-17,2023-01-20,Second,C-052,Mae Jemison,Home Office,Canada,Ottawa
+55,CA-055,2023-02-05,2023-02-08,First,C-053,Alexander Fleming,Corporate,United Kingdom,Manchester
+56,CA-056,2023-03-14,2023-03-18,Standard,C-054,Chien-Shiung Wu,Consumer,China,Shanghai
+57,CA-057,2023-04-09,2023-04-12,Second,C-055,George Boole,Home Office,United States,Houston
+58,CA-058,2023-05-20,2023-05-24,First,C-056,Alan Turing,Corporate,Germany,Berlin
+59,CA-059,2023-06-28,2023-07-01,Standard,C-057,Rita Levi-Montalcini,Consumer,Italy,Florence
+60,CA-060,2023-07-12,2023-07-15,Second,C-058,Grace Hopper,Home Office,United States,Seattle
