@@ -1,0 +1,4 @@
+2026-09-26 20:05:20,053 INFO - Reading source file: data\sales.csv
+2026-09-26 20:05:20,246 INFO - ETL finished successfully. Output saved in output
+2026-09-26 20:06:14,281 INFO - Reading source file: data\sales.csv
+2026-09-26 20:06:14,483 INFO - ETL finished successfully. Output saved in output
