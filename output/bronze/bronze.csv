@@ -1,0 +1,5 @@
+row_id,order_id,order_date,ship_date,ship_mode,customer_id,customer_name,segment,country_name,city,file_path,execution_datetime,order_year,order_month,order_day
+1,CA-001,2018-12-30,2019-01-02,Standard,C-001,Ada Lovelace,Consumer,United Kingdom,London,data\sales.csv,2026-09-25 16:36:19.852270,2018,12,30
+2,CA-002,2018-11-30,2018-12-02,First,C-001,Ada Lovelace,Consumer,United Kingdom,London,data\sales.csv,2026-09-25 16:36:19.852270,2018,11,30
+3,CA-003,2018-01-01,2018-01-03,Standard,C-001,Ada Lovelace,Consumer,United Kingdom,London,data\sales.csv,2026-09-25 16:36:19.852270,2018,1,1
+4,CA-004,2018-12-15,2018-12-20,Second,C-002,Grace Hopper,Corporate,United States,New York,data\sales.csv,2026-09-25 16:36:19.852270,2018,12,15

@@ -1,0 +1,3 @@
+customer_id,customer_first_name,customer_last_name,customer_segment,country,orders_last_month,orders_last_6_months,orders_last_12_months,orders_all_time,file_path,execution_datetime,order_year,order_month,order_day
+C-001,Ada,Lovelace,Consumer,United Kingdom,2,2,3,3,data\sales.csv,2026-09-25 16:36:19.852270,2018,12,30
+C-002,Grace,Hopper,Corporate,United States,1,1,1,1,data\sales.csv,2026-09-25 16:36:19.852270,2018,12,30
