@@ -31,11 +31,24 @@ def normalize_column_name(column_name: str) -> str:
     return str(column_name).strip().lower().replace(" ", "_")
 
 
+def normalize_string_value(value):
+    """Strip whitespace and convert empty strings to missing values."""
+    if pd.isna(value):
+        return None
+    cleaned = str(value).strip()
+    return cleaned if cleaned else None
+
+
 def build_bronze(data):
-    """Clean column names and create order date partition fields."""
+    """Bronze layer keeps the raw source data plus metadata, without cleaning values."""
     data = data.copy()
     data.columns = [normalize_column_name(column_name) for column_name in data.columns]
-    data["order_date"] = pd.to_datetime(data["order_date"], errors="coerce", format="mixed")
+
+    if "order_date" in data.columns:
+        data["order_date"] = pd.to_datetime(data["order_date"], errors="coerce", format="mixed")
+    if "ship_date" in data.columns:
+        data["ship_date"] = pd.to_datetime(data["ship_date"], errors="coerce", format="mixed")
+
     data["order_year"] = data["order_date"].dt.year
     data["order_month"] = data["order_date"].dt.month
     data["order_day"] = data["order_date"].dt.day

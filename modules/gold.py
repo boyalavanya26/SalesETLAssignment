@@ -25,7 +25,8 @@ def build_customer(data, latest_date: str = "2018-12-30"):
     """Create one row per customer with order-count summary metrics."""
     report_date = pd.to_datetime(latest_date)
     customer_data = data.copy()
-    customer_data["customer_name"] = customer_data["customer_name"].fillna("").astype(str).str.strip()
+    customer_data["customer_id"] = customer_data["customer_id"].fillna("").astype(str).str.strip().str.upper()
+    customer_data["customer_name"] = customer_data["customer_name"].fillna("").astype(str).str.strip().str.title()
     customer_data["customer_name_parts"] = customer_data["customer_name"].str.split()
     customer_data["customer_first_name"] = customer_data["customer_name_parts"].map(lambda value: value[0] if value else None)
     customer_data["customer_last_name"] = customer_data["customer_name_parts"].map(lambda value: value[-1] if value else None)

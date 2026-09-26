@@ -3,9 +3,9 @@ from pathlib import Path
 import pandas as pd
 import pytest
 
-from bronze import read_sales
-from gold import build_customer, build_sales
-from silver import build_silver
+from modules.bronze import read_sales
+from modules.gold import build_customer, build_sales
+from modules.silver import build_silver
 
 
 @pytest.fixture
@@ -38,6 +38,29 @@ def test_sales_contract(sample_data):
         "order_id", "order_date", "shipment_date", "shipment_mode", "city",
         "file_path", "execution_datetime", "order_year", "order_month", "order_day",
     ]
+
+
+def test_dirty_sales_data_is_normalized_in_silver():
+    dirty_data = pd.DataFrame(
+        [
+            (" CA-101 ", " 2020-01-05 ", " 2020-01-08 ", " standard ", " c-001 ", "  ada lovelace  ", " consumer ", " united states ", " new york ", "raw.csv", pd.Timestamp("2020-01-09")),
+            (" CA-102 ", " not-a-date ", " 2020-01-12 ", " first ", " c-002 ", "  grace hopper  ", " corporate ", " united states ", " chicago ", "raw.csv", pd.Timestamp("2020-01-09")),
+            (" CA-103 ", " 2020-02-01 ", " 2020-02-04 ", "second", " c-001 ", "ADA LOVELACE", "consumer", "United States", "New York", "raw.csv", pd.Timestamp("2020-01-09")),
+        ],
+        columns=[
+            "order_id", "order_date", "ship_date", "ship_mode", "customer_id", "customer_name",
+            "segment", "country_name", "city", "file_path", "execution_datetime",
+        ],
+    )
+
+    result = build_silver(dirty_data)
+
+    assert list(result["order_id"]) == ["CA-101", "CA-103"]
+    assert list(result["customer_id"]) == ["C-001", "C-001"]
+    assert list(result["customer_name"]) == ["Ada Lovelace", "Ada Lovelace"]
+    assert list(result["segment"]) == ["Consumer", "Consumer"]
+    assert list(result["country_name"]) == ["United States", "United States"]
+    assert list(result["city"]) == ["New York", "New York"]
 
 
 def test_missing_input_raises(tmp_path: Path):

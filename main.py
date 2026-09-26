@@ -3,10 +3,10 @@
 import argparse
 from pathlib import Path
 
-from bronze import build_bronze, read_sales
-from gold import build_customer, build_sales
-from logger import configure_logging, get_logger
-from silver import build_silver
+from modules.bronze import build_bronze, read_sales
+from modules.gold import build_customer, build_sales
+from modules.logger import configure_logging, get_logger
+from modules.silver import build_silver
 
 
 def write_output(data, output_folder: Path, file_name: str) -> None:
