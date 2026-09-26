@@ -2,7 +2,7 @@
 
 This project is a Python and PySpark ETL pipeline organized in Bronze, Silver, and Gold layers.
 
-## Project structure
+## Project_structure
 
 
 ```text
@@ -62,3 +62,20 @@ The tests cover customer order counts, Sales columns, and missing input paths.
 Spark may need Hadoop's `winutils.exe` to write local Parquet files on Windows. If Spark reports that `HADOOP_HOME` is missing, configure Hadoop or run the project in WSL/Linux or a managed Spark environment. The transformation tests do not require local Parquet writing.
 
 The transformation tests do not require local Parquet writing.
+
+## CI/CD Implementation
+
+A GitHub Actions workflow has been implemented for Continuous Integration.
+
+Pipeline Steps:
+1. Checkout source code
+2. Setup Python environment
+3. Install project dependencies
+4. Run unit tests
+5. Execute ETL pipeline
+
+Benefits:
+- Automated validation of code changes
+- Early detection of failures
+- Improved code quality
+- Reproducible execution environment
