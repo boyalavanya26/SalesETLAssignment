@@ -33,4 +33,6 @@ jobs:
 
       - name: Run ETL Pipeline
         run: |
-          python src/main.py
+          python src/main.py \
+            --input data/sales.csv \
+            --output output
