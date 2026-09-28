@@ -4,3 +4,59 @@
 2026-09-26 20:06:14,483 INFO - ETL finished successfully. Output saved in output
 2026-09-26 20:16:02,953 INFO - Reading source file: data\sales.csv
 2026-09-26 20:16:03,144 INFO - ETL finished successfully. Output saved in output
+2026-09-27 12:18:40,269 INFO - [ETL START] Reading source file: data\sales.csv
+2026-09-27 12:18:40,271 INFO - [BRONZE] Starting Bronze ingestion from source data
+2026-09-27 12:18:40,319 INFO - [BRONZE] Bronze layer finished with 67 rows
+2026-09-27 12:18:40,333 INFO - [BRONZE] Bronze output written to output\bronze
+2026-09-27 12:18:40,333 INFO - [SILVER] Starting data cleaning and validation
+2026-09-27 12:18:40,361 INFO - [SILVER] Silver layer finished with 66 rows
+2026-09-27 12:18:40,369 INFO - [SILVER] Silver output written to output\silver
+2026-09-27 12:18:40,369 INFO - [GOLD] Starting sales aggregation
+2026-09-27 12:18:40,377 INFO - [GOLD] Sales aggregation finished with 66 rows
+2026-09-27 12:18:40,384 INFO - [GOLD] Sales gold output written to output\gold\sales
+2026-09-27 12:18:40,385 INFO - [GOLD] Starting customer aggregation
+2026-09-27 12:18:40,529 INFO - [GOLD] Customer aggregation finished with 64 rows
+2026-09-27 12:18:40,537 INFO - [GOLD] Customer gold output written to output\gold\customer
+2026-09-27 12:18:40,537 INFO - [ETL END] Pipeline completed successfully. Output saved in output
+2026-09-27 12:22:20,513 INFO - [ETL START] Reading source file: data\sales.csv
+2026-09-27 12:22:20,514 INFO - [BRONZE] Starting Bronze ingestion from source data
+2026-09-27 12:22:20,537 INFO - [BRONZE] Bronze layer finished with 67 rows
+2026-09-27 12:22:20,550 INFO - [BRONZE] Bronze output written to output\bronze
+2026-09-27 12:22:20,551 INFO - [SILVER] Starting data cleaning and validation
+2026-09-27 12:22:20,574 INFO - [SILVER] Silver layer finished with 66 rows
+2026-09-27 12:22:20,583 INFO - [SILVER] Silver output written to output\silver
+2026-09-27 12:22:20,584 INFO - [GOLD] Starting sales aggregation
+2026-09-27 12:22:20,587 INFO - [GOLD] Sales aggregation finished with 66 rows
+2026-09-27 12:22:20,594 INFO - [GOLD] Sales gold output written to output\gold\sales
+2026-09-27 12:22:20,595 INFO - [GOLD] Starting customer aggregation
+2026-09-27 12:22:20,709 INFO - [GOLD] Customer aggregation finished with 64 rows
+2026-09-27 12:22:20,715 INFO - [GOLD] Customer gold output written to output\gold\customer
+2026-09-27 12:22:20,716 INFO - [ETL END] Pipeline completed successfully. Output saved in output
+2026-09-27 12:22:34,923 INFO - [ETL START] Reading source file: data\sales.csv
+2026-09-27 12:22:34,924 INFO - [BRONZE] Starting Bronze ingestion from source data
+2026-09-27 12:22:34,942 INFO - [BRONZE] Bronze layer finished with 67 rows
+2026-09-27 12:22:34,952 INFO - [BRONZE] Bronze output written to output\bronze
+2026-09-27 12:22:34,953 INFO - [SILVER] Starting data cleaning and validation
+2026-09-27 12:22:34,969 INFO - [SILVER] Silver layer finished with 66 rows
+2026-09-27 12:22:34,976 INFO - [SILVER] Silver output written to output\silver
+2026-09-27 12:22:34,977 INFO - [GOLD] Starting sales aggregation
+2026-09-27 12:22:34,981 INFO - [GOLD] Sales aggregation finished with 66 rows
+2026-09-27 12:22:34,990 INFO - [GOLD] Sales gold output written to output\gold\sales
+2026-09-27 12:22:34,991 INFO - [GOLD] Starting customer aggregation
+2026-09-27 12:22:35,108 INFO - [GOLD] Customer aggregation finished with 64 rows
+2026-09-27 12:22:35,114 INFO - [GOLD] Customer gold output written to output\gold\customer
+2026-09-27 12:22:35,115 INFO - [ETL END] Pipeline completed successfully. Output saved in output
+2026-09-27 12:55:14,554 INFO - [ETL START] Reading source file: data\sales.csv
+2026-09-27 12:55:14,554 INFO - [BRONZE] Starting Bronze ingestion from source data
+2026-09-27 12:55:14,565 INFO - [BRONZE] Bronze layer finished with 67 rows
+2026-09-27 12:55:14,758 INFO - [BRONZE] Bronze output written to output\bronze
+2026-09-27 12:55:14,758 INFO - [SILVER] Starting data cleaning and validation
+2026-09-27 12:55:14,767 INFO - [SILVER] Silver layer finished with 66 rows
+2026-09-27 12:55:14,778 INFO - [SILVER] Silver output written to output\silver
+2026-09-27 12:55:14,779 INFO - [GOLD] Starting sales aggregation
+2026-09-27 12:55:14,780 INFO - [GOLD] Sales aggregation finished with 66 rows
+2026-09-27 12:55:14,786 INFO - [GOLD] Sales gold output written to output\gold\sales
+2026-09-27 12:55:14,787 INFO - [GOLD] Starting customer aggregation
+2026-09-27 12:55:14,869 INFO - [GOLD] Customer aggregation finished with 64 rows
+2026-09-27 12:55:14,884 INFO - [GOLD] Customer gold output written to output\gold\customer
+2026-09-27 12:55:14,885 INFO - [ETL END] Pipeline completed successfully. Output saved in output
